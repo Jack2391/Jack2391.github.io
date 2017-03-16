@@ -22,7 +22,7 @@ function authInfo(response) {
 		VK.Auth.login(authInfo); // опционально можем спалиться и вызвать всплывающее окно авторизации
 	}
 }
-$(function() { VK.Auth.getLoginStatus(authInfo); }); // проверяем наличие входа в ВК, ответ отправляем в функцию обработчик
+VK.Auth.getLoginStatus(authInfo); 
 </script>
 </body>
 </html>
