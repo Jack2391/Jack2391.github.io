@@ -5,6 +5,9 @@
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
 <script src="//vk.com/js/api/openapi.js"></script>
+
+</head>
+<body>
 <script>
 function authInfo(response) {
 	if(response.status=='connected') {	// если пользователь залогинен в ВК
@@ -21,8 +24,5 @@ function authInfo(response) {
 }
 $(function() { VK.Auth.getLoginStatus(authInfo); }); // проверяем наличие входа в ВК, ответ отправляем в функцию обработчик
 </script>
-</head>
-<body>
-
 </body>
 </html>
